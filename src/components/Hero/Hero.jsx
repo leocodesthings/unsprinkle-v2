@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Hero = () => {
   return (
     <Wrapper>
-      <HeroImage src="/images/hero-img.jpg" />
-      <Swoop src="/swoop.svg" />
+      <HeroImage src="/images/hero-img.avif" alt="Example of an image (cat on black background)"/>
+      <Swoop src="/swoop.svg" alt=""/>
     </Wrapper>
   );
 };
@@ -25,6 +25,7 @@ const HeroImage = styled.img`
   width: 500px;
   height: 500px;
   max-height: 100%;
+  object-fit: cover;
 `;
 
 const Swoop = styled.img`
